@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_order_form_inh_costsim">
+			<field name="name">view.order.form.inh.costsim</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_form" />
+			<field name="arch" type="xml">	
+				<notebook position="inside">
+					<page string="Simulation Costs">
+						<group colspan="4">
+							<field name="simulation_cost_ids" nolabel="1"/>
+						</group>
+					</page>
+				</notebook>
+			</field>
+		</record>
+	</data>
+</openerp>

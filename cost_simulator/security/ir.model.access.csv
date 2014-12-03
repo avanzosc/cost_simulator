@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_simulation_cost","simulation_cost","cost_simulator.model_simulation_cost","group_cost_simulator",1,1,1,1
+"access_simulation_cost_line","simulation_cost_line","cost_simulator.model_simulation_cost_line","group_cost_simulator",,,,
+"access_simulation_template","simulation_template","cost_simulator.model_simulation_template","group_cost_simulator",,,,
+"access_simulation_template_line","simulation_template_line","cost_simulator.model_simulation_template_line","group_cost_simulator",,,,

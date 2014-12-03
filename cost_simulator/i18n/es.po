@@ -1,0 +1,1263 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cost_simulator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-30 13:54+0000\n"
+"PO-Revision-Date: 2014-07-31 10:58+0100\n"
+"Last-Translator: Alfredo <alfredodelafuente@avanzosc.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1140
+#, python-format
+msgid "\"Others\" literal not found in Table Purchase Type"
+msgstr "\"Others\" literal no encontrado en la tabla de Tipos de Compra"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: selection:simulation.cost,state:0
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:544
+#, python-format
+msgid "Already Historical"
+msgstr "Ya esta historificada"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,amortization_cost:0
+msgid "Amortization Cost"
+msgstr "Costes Amortización"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "Amortization Expenses"
+msgstr "Gastos Amortización"
+
+#. module: cost_simulator
+#: field:product.product,amortization_rate:0
+#: field:simulation.cost.line,amortization_rate:0
+#: field:simulation.template.line,amortization_rate:0
+msgid "Amortization Rate"
+msgstr "Tasa Amortización"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Amortizations"
+msgstr "Amortizaciones"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,amount:0
+#: field:simulation.template.line,amount:0
+msgid "Amount"
+msgstr "Cantidad"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,benefit:0
+msgid "Benefit"
+msgstr "Beneficio"
+
+#. module: cost_simulator
+#: view:wiz.confirm.create.sale.order:0
+msgid "By line"
+msgstr "Por Línea"
+
+#. module: cost_simulator
+#: view:wiz.confirm.create.sale.order:0
+msgid "By product of template"
+msgstr "Por Producto de Plantilla"
+
+#. module: cost_simulator
+#: view:simulation.select.template:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: selection:simulation.cost,state:0
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: cost_simulator
+#: view:wiz.confirm.create.sale.order:0
+msgid "Confirm the creation of sale order"
+msgstr "Confirme la creación del pedido de venta"
+
+#. module: cost_simulator
+#: field:simulation.cost,contribution_margin:0
+msgid "Contribution Margin"
+msgstr "Margen Contribución"
+
+#. module: cost_simulator
+#: field:simulation.cost,contribution_margin_percentage:0
+msgid "Contribution Margin %"
+msgstr "% Margen Contribución"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Copy Cost Simulation"
+msgstr "Copiar Simulación de Costes"
+
+#. module: cost_simulator
+#: field:simulation.cost,purchase_insale:0
+#: field:simulation.cost.line,purchase_insale:0
+msgid "Copy Purchase information in Sale information"
+msgstr "Copiar Información de Compra, en información de Venta."
+
+#. module: cost_simulator
+#: field:simulation.cost.line,simulation_cost_id:0
+msgid "Cost"
+msgstr "Coste"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,type3:0
+#: field:simulation.template.line,type3:0
+msgid "Cost Category"
+msgstr "Coste Categoría"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+msgid "Cost Prevision"
+msgstr "Previsión Coste"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,purchase_price:0
+msgid "Cost Price"
+msgstr "Precio Coste"
+
+#. module: cost_simulator
+#: field:project.task,cost_product_name:0
+msgid "Cost Product"
+msgstr "Producto de Coste"
+
+#. module: cost_simulator
+#: model:ir.actions.act_window,name:cost_simulator.action_simulation_cost
+#: view:simulation.cost.line:0
+#: view:simulation.template.line:0
+msgid "Costs"
+msgstr "Costes"
+
+#. module: cost_simulator
+#: model:ir.ui.menu,name:cost_simulator.simulation_cost_group_view
+#: model:ir.ui.menu,name:cost_simulator.simulation_cost_menu_view
+#: view:simulation.cost:0
+msgid "Costs Simulation"
+msgstr "Simulación de Costes"
+
+#. module: cost_simulator
+#: model:res.groups,name:cost_simulator.group_cost_simulator
+msgid "Costs Simulator"
+msgstr "Simulador de Costes"
+
+#. module: cost_simulator
+#: field:sale.order.line,clear_procurement:0
+msgid "Crear Procurement"
+msgstr "Crear Abatecimiento"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Create New From Historical"
+msgstr "Crear Nueva Desde Histórico"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Create Sale Order"
+msgstr "Crear Pedido de Venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:352
+#: code:addons/cost_simulator/models/simulation_cost.py:356
+#, python-format
+msgid "Create Sale Order Error"
+msgstr "Error Creación Pedido de Venta"
+
+#. module: cost_simulator
+#: field:simulation.cost,create_uid:0
+#: field:simulation.cost.line,create_uid:0
+#: field:simulation.select.template,create_uid:0
+#: field:simulation.template,create_uid:0
+#: field:simulation.template.line,create_uid:0
+#: field:wiz.confirm.create.sale.order,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: cost_simulator
+#: field:simulation.cost,create_date:0
+#: field:simulation.cost.line,create_date:0
+#: field:simulation.select.template,create_date:0
+#: field:simulation.template,create_date:0
+#: field:simulation.template.line,create_date:0
+#: field:wiz.confirm.create.sale.order,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,partner_id:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:337
+#, python-format
+msgid "Customer Error"
+msgstr "Error Cliente"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,uom_id:0
+#: field:simulation.template.line,uom_id:0
+msgid "Default Unit Of Measure"
+msgstr "Unidad de Medida por Defecto"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,description:0
+#: field:simulation.template.line,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cost_simulator
+#: field:simulation.cost,name:0
+msgid "Description/Name"
+msgstr "Descripción/Nombre"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: selection:simulation.cost,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:182
+#: code:addons/cost_simulator/models/simulation_cost.py:331
+#: code:addons/cost_simulator/models/simulation_cost.py:446
+#: code:addons/cost_simulator/models/simulation_cost.py:684
+#: code:addons/cost_simulator/wizard/simulation_select_template.py:40
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:570
+#, python-format
+msgid "Error Creating Simulation Cost"
+msgstr "Error Creando Simulación de Coste"
+
+#. module: cost_simulator
+#: field:account.analytic.account,estimated_balance:0
+msgid "Estimated Balance"
+msgstr "Balance Estimado"
+
+#. module: cost_simulator
+#: field:account.analytic.account,estimated_cost:0
+msgid "Estimated Cost"
+msgstr "Coste Estimado"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,estimated_date_purchase_completion:0
+msgid "Estimated Date Purchase Completion"
+msgstr "Fecha Estimada Compra"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,estimated_margin:0
+msgid "Estimated Margin"
+msgstr "Margen Estimado"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1184
+#, python-format
+msgid "Estimated Margin Error"
+msgstr "Margen Estimado Error"
+
+#. module: cost_simulator
+#: view:project.task:0
+msgid "Estimated Products"
+msgstr "Productos Estimados"
+
+#. module: cost_simulator
+#: field:account.analytic.account,estimated_sale:0
+msgid "Estimated Sale"
+msgstr "Venta Estimada"
+
+#. module: cost_simulator
+#: view:account.analytic.account:0
+msgid "Estimations"
+msgstr "Estimaciones"
+
+#. module: cost_simulator
+#: help:procurement.order,message:0
+msgid "Exception occurred while computing procurement orders."
+msgstr "Ha ocurrido una excepción mientras se calculaban órdenes de abastecimiento."
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type2:0
+#: selection:simulation.template.line,type2:0
+msgid "Fixed"
+msgstr "Fijo"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,type2:0
+#: field:simulation.template.line,type2:0
+msgid "Fixed/Variable"
+msgstr "Fijo/Variable"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "General Expenses"
+msgstr "Gastos Generales"
+
+#. module: cost_simulator
+#: field:simulation.cost,generate_by_line:0
+msgid "Generate by line"
+msgstr "Generar por Línea"
+
+#. module: cost_simulator
+#: field:simulation.cost,gross_margin:0
+msgid "Gross Margin"
+msgstr "Margen Bruto"
+
+#. module: cost_simulator
+#: field:simulation.cost,gross_margin_percentage:0
+msgid "Gross Margin %"
+msgstr "Margen Bruto %"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Group By..."
+msgstr "Agrupar Por..."
+
+#. module: cost_simulator
+#: field:simulation.cost,historical_date:0
+msgid "Historical Date"
+msgstr "Fecha Histórico"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:543
+#, python-format
+msgid "Historical Error"
+msgstr "Error Historico"
+
+#. module: cost_simulator
+#: field:simulation.cost,historical_ok:0
+msgid "Historical OK"
+msgstr "Historico OK"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Historificar"
+msgstr "Historificar"
+
+#. module: cost_simulator
+#: view:wiz.confirm.create.sale.order:0
+msgid "How do you want to create the sale order?"
+msgstr "¿Como desea crear el Pedido de Venta?"
+
+#. module: cost_simulator
+#: field:simulation.cost,id:0
+#: field:simulation.cost.line,id:0
+#: field:simulation.select.template,id:0
+#: field:simulation.template,id:0
+#: field:simulation.template.line,id:0
+#: field:wiz.confirm.create.sale.order,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,indirect_cost:0
+msgid "Indirect Cost"
+msgstr "Coste Indirecto"
+
+#. module: cost_simulator
+#: field:product.product,indirect_cost_rate:0
+#: field:simulation.cost.line,indirect_cost_rate:0
+#: field:simulation.template.line,indirect_cost_rate:0
+msgid "Indirect Cost Rate"
+msgstr "Tasa Coste Indirecto"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Indirects"
+msgstr "Indirectos"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Insert Lines From Template"
+msgstr "Insertar Líneas Desde Plantilla"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type_cost:0
+msgid "Internal Task"
+msgstr "Tareas Internas"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:169
+#, python-format
+msgid "Invalid action !"
+msgstr "Acción Inválida !"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type_cost:0
+msgid "Investment"
+msgstr "Inversión"
+
+#. module: cost_simulator
+#: field:project.project,is_project:0
+msgid "Is Project"
+msgstr "Es Proyecto"
+
+#. module: cost_simulator
+#: field:project.project,is_subproject:0
+msgid "Is Subproject"
+msgstr "Es Subproyecto"
+
+#. module: cost_simulator
+#: field:simulation.cost,write_uid:0
+#: field:simulation.cost.line,write_uid:0
+#: field:simulation.select.template,write_uid:0
+#: field:simulation.template,write_uid:0
+#: field:simulation.template.line,write_uid:0
+#: field:wiz.confirm.create.sale.order,write_uid:0
+msgid "Last Updated by"
+msgstr "Última Actualización realizar por"
+
+#. module: cost_simulator
+#: field:simulation.cost,write_date:0
+#: field:simulation.cost.line,write_date:0
+#: field:simulation.select.template,write_date:0
+#: field:simulation.template,write_date:0
+#: field:simulation.template.line,write_date:0
+#: field:wiz.confirm.create.sale.order,write_date:0
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: cost_simulator
+#: field:procurement.order,message:0
+msgid "Latest error"
+msgstr "Último error"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "Marketing"
+msgstr "Marketing"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,name:0
+#: field:simulation.template,name:0
+#: field:simulation.template.line,name:0
+msgid "Name"
+msgstr "Descripción"
+
+#. module: cost_simulator
+#: field:simulation.cost,net_cost:0
+msgid "Net Cost"
+msgstr "Coste Neto"
+
+#. module: cost_simulator
+#: field:simulation.cost,net_cost_percentage:0
+msgid "Net Cost %"
+msgstr "Coste Neto %"
+
+#. module: cost_simulator
+#: field:simulation.cost,net_margin:0
+msgid "Net Margin"
+msgstr "Margen Neto"
+
+#. module: cost_simulator
+#: field:simulation.cost,net_margin_percentage:0
+msgid "Net Margin %"
+msgstr "Margen Neto %"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:446
+#, python-format
+msgid "No Cost Lines found to Treat"
+msgstr "No encontradas líneas de costes a tratar"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/purchase_order_ext.py:36
+#, python-format
+msgid "OTHERS purchase type NOT FOUND"
+msgstr "Tipo de Compra OTHERS NO ENCONTRADA"
+
+#. module: cost_simulator
+#: view:simulation.select.template:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:353
+#, python-format
+msgid "On a line of others lines, needed to define a purchase product"
+msgstr "En una línea de simulación, necesita  definir el producto de compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:357
+#, python-format
+msgid "On a line of others lines, needed to define a sale product"
+msgstr "En una línea de simulación, necesita definir el producto de venta"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type_cost:0
+#: selection:simulation.template.line,type_cost:0
+msgid "Others"
+msgstr "Otros"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Others Benefit"
+msgstr "Beneficio Otros"
+
+#. module: cost_simulator
+#: field:simulation.cost,others_cost_lines_ids:0
+#: field:simulation.template,others_template_lines_ids:0
+msgid "Others Lines"
+msgstr "Líneas"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:707
+#: code:addons/cost_simulator/models/procurement_order_ext.py:975
+#: code:addons/cost_simulator/models/sale_order_ext.py:463
+#: code:addons/cost_simulator/models/sale_order_ext.py:680
+#, python-format
+msgid "Others literal not found in Table Purchase Type"
+msgstr "Literal OTHERS no encontrado en la Tabla de Tipos de Compra"
+
+#. module: cost_simulator
+#: field:simulation.cost,overhead_costs:0
+msgid "Overhead Costs"
+msgstr "Gastos Generales"
+
+#. module: cost_simulator
+#: field:simulation.cost,total_overhead_costs:0
+msgid "Overhead_costs"
+msgstr "Overhead_costs"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1030
+#, python-format
+msgid "Price/Amount Error"
+msgstr "Precio/Cantidad Error"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_procurement_order
+msgid "Procurement"
+msgstr "Abastecimiento"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:60
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1424
+#, python-format
+msgid "Procurement Order with state RUNNING not found"
+msgstr "Abatecimiento con estado RUNNING no encontrado"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_product_product
+#: field:simulation.cost.line,product_id:0
+#: field:simulation.cost.line,product_sale_id:0
+#: field:simulation.template.line,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:827
+#, python-format
+msgid "Product Error"
+msgstr "Error Producto"
+
+#. module: cost_simulator
+#: field:simulation.template,template_product_id:0
+msgid "Product for sale"
+msgstr "Producto para la venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1121
+#, python-format
+msgid "Product must be to sale OR the same product of purchase"
+msgstr "El producto debe ser para vender O el mismo producto de compra"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+msgid "Product of Cost / Template"
+msgstr "Producto de Coste / Plantilla"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+msgid "Product of Sale"
+msgstr "Producto de Venta"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "Production"
+msgstr "Producción"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_project_project
+#: field:project.task,project3_id:0
+#: field:purchase.order,project3_id:0
+#: field:sale.order,project2_id:0
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1423
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1463
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1491
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1711
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1768
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1775
+#: code:addons/cost_simulator/models/sale_order_ext.py:160
+#, python-format
+msgid "Project Creation Error"
+msgstr "Error Creación Proyecto"
+
+#. module: cost_simulator
+#: field:project.project,purchase_order_ids:0
+#: field:project.project,purchase_order_ids2:0
+msgid "Project Purchase Orders"
+msgstr "Pedidos de Compra del Proyecto"
+
+#. module: cost_simulator
+#: field:project.project,task_ids2:0
+msgid "Project Task"
+msgstr "Tarea del Proyecto"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:136
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1492
+#, python-format
+msgid "Project not found"
+msgstr "Proyecto no encontrado"
+
+#. module: cost_simulator
+#: field:project.project,sale_order_ids:0
+msgid "Project tasks"
+msgstr "Tareas del Proyecto"
+
+#. module: cost_simulator
+#: field:simulation.cost,project_ids:0
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Projects/Subprojects"
+msgstr "Proyectos/Subproyectos"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type_cost:0
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:59
+#: code:addons/cost_simulator/models/procurement_order_ext.py:99
+#: code:addons/cost_simulator/models/procurement_order_ext.py:134
+#: code:addons/cost_simulator/models/procurement_order_ext.py:254
+#: code:addons/cost_simulator/models/procurement_order_ext.py:263
+#: code:addons/cost_simulator/models/procurement_order_ext.py:285
+#: code:addons/cost_simulator/models/procurement_order_ext.py:383
+#: code:addons/cost_simulator/models/procurement_order_ext.py:461
+#: code:addons/cost_simulator/models/procurement_order_ext.py:471
+#: code:addons/cost_simulator/models/procurement_order_ext.py:497
+#: code:addons/cost_simulator/models/procurement_order_ext.py:705
+#: code:addons/cost_simulator/models/procurement_order_ext.py:753
+#: code:addons/cost_simulator/models/procurement_order_ext.py:850
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1030
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1139
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1217
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1327
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1360
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:51
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:66
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:164
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:174
+#: code:addons/cost_simulator/models/sale_order_ext.py:501
+#: code:addons/cost_simulator/models/sale_order_ext.py:578
+#: code:addons/cost_simulator/models/sale_order_ext.py:720
+#: code:addons/cost_simulator/models/sale_order_ext.py:866
+#: code:addons/cost_simulator/models/sale_order_ext.py:976
+#: code:addons/cost_simulator/models/sale_order_ext.py:1008
+#: code:addons/cost_simulator/models/sale_order_ext.py:1139
+#, python-format
+msgid "Purchase Order Creation Error"
+msgstr "Error Creación Pedido de Compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:973
+#: code:addons/cost_simulator/models/sale_order_ext.py:462
+#: code:addons/cost_simulator/models/sale_order_ext.py:679
+#: code:addons/cost_simulator/models/sale_order_ext.py:797
+#, python-format
+msgid "Purchase Order Error"
+msgstr "Error Pedido de Compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:286
+#: code:addons/cost_simulator/models/procurement_order_ext.py:499
+#, python-format
+msgid "Purchase Order Line not found(1)"
+msgstr "Línea de Pedido de Compra no encontrada(1)"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:755
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1032
+#: code:addons/cost_simulator/models/sale_order_ext.py:502
+#: code:addons/cost_simulator/models/sale_order_ext.py:722
+#, python-format
+msgid "Purchase Order Line not found(2)"
+msgstr "Línea de Pedido de Compra no encontrada(2)"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:255
+#: code:addons/cost_simulator/models/procurement_order_ext.py:463
+#, python-format
+msgid "Purchase Order sequence not found"
+msgstr "Secuencia de Pedidos de Compra NO ENCONTRADA"
+
+#. module: cost_simulator
+#: field:sale.order,purchase_order_ids:0
+msgid "Purchase Orders"
+msgstr "Pedidos de Compra"
+
+#. module: cost_simulator
+#: view:project.project:0
+msgid "Purchase Orders and Task"
+msgstr "Pedidos de Compra y Tareas"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_purchase_requisition
+msgid "Purchase Requisition"
+msgstr "Solicitud de compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/purchase_order_ext.py:35
+#, python-format
+msgid "Purchase Type ERROR"
+msgstr "Error Tipo de Compra"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:68
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:175
+#, python-format
+msgid "Purchase Type NOT FOUND"
+msgstr "Tipo de Compra NO ENCONTRADA"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:264
+#: code:addons/cost_simulator/models/procurement_order_ext.py:473
+#, python-format
+msgid "Purchase Type not found"
+msgstr "Tipo de Compra no encontrada"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/sale_order_ext.py:798
+#, python-format
+msgid "Purchase literal not found in Table Purchase Type"
+msgstr "Literal PURCHASE no encontrado en la tabla de Tipos de Compra"
+
+#. module: cost_simulator
+#: view:product.product:0
+msgid "Rates"
+msgstr "Tasas"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Recalculation"
+msgstr "Recalcular"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Recalculation Total Cost"
+msgstr "Recalcular Total Costes"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "Sale"
+msgstr "Venta"
+
+#. module: cost_simulator
+#: field:purchase.order,sale_order_id:0
+msgid "Sale Order"
+msgstr "Pedido de Venta"
+
+#. module: cost_simulator
+#: field:simulation.cost,sale_order_ids:0
+msgid "Sale Orders"
+msgstr "Pedidos de Venta"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,sale_order_line_id:0
+msgid "Sale Orders Lines"
+msgstr "Líneas de Pedido de Venta"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,sale_price:0
+msgid "Sale Price"
+msgstr "Precio Venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1150
+#, python-format
+msgid "Sale Price Error"
+msgstr "Error Precio Venta"
+
+#. module: cost_simulator
+#: field:project.task,sale_product_name:0
+msgid "Sale Product"
+msgstr "Producto de Venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1110
+#: code:addons/cost_simulator/models/simulation_cost.py:1120
+#, python-format
+msgid "Sale Product Error"
+msgstr "Error Producto de Venta"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_sale_order
+#: view:simulation.cost:0
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea pedido de venta"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Search Cost Simulation"
+msgstr "Buscar Simulación de Coste"
+
+#. module: cost_simulator
+#: model:ir.actions.act_window,name:cost_simulator.act_unique_id
+msgid "Select Template"
+msgstr "Seleccionar Plantilla"
+
+#. module: cost_simulator
+#: field:simulation.cost,simulation_number:0
+msgid "Serial"
+msgstr "Serial"
+
+#. module: cost_simulator
+#: model:ir.ui.menu,name:cost_simulator.simulationtemplate_menu
+msgid "Simulation"
+msgstr "Simulación"
+
+#. module: cost_simulator
+#: field:project.project,simulation_cost_id:0
+#: field:project.project,simulation_cost_id2:0
+msgid "Simulation Cost"
+msgstr "Simulación de Costes"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_simulation_cost_line
+#: view:simulation.cost.line:0
+msgid "Simulation Cost Line"
+msgstr "Línea de Simulación de Costes"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:101
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1464
+#: code:addons/cost_simulator/models/sale_order_ext.py:161
+#, python-format
+msgid "Simulation Cost not found"
+msgstr "Simulación de Costes no encontrada"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_simulation_cost
+#: view:sale.order:0
+#: field:sale.order,simulation_cost_ids:0
+msgid "Simulation Costs"
+msgstr "Simulación de Costes"
+
+#. module: cost_simulator
+#: field:sale.order.line,simulation_cost_line_ids:0
+msgid "Simulation Costs Lines"
+msgstr "Líneas de Simulación de Costes"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Simulation Lines"
+msgstr "Líneas de Simulación"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_simulation_template
+msgid "Simulation Template"
+msgstr "Plantilla de Simulación"
+
+#. module: cost_simulator
+#: model:ir.ui.menu,name:cost_simulator.simulation_template_group_view
+msgid "Simulation Template Group"
+msgstr "Grupo de Plantilla de Simulación"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_simulation_template_line
+msgid "Simulation Template Line"
+msgstr "Línea Plantilla Simulación"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type3:0
+#: selection:simulation.template.line,type3:0
+msgid "Structure Expenses"
+msgstr "Gastos de Estructura"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1328
+#, python-format
+msgid "Subaccount Analytic Account not found(1), literal: %s"
+msgstr "Subcuenta Analítica no encontrada(1), literal: %s"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/sale_order_ext.py:1140
+#, python-format
+msgid "Subaccount Analytic account not found, for literal: %s"
+msgstr "Subcuenta Analítica no encontrada, para el literal: %s"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1361
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1776
+#: code:addons/cost_simulator/models/sale_order_ext.py:1009
+#, python-format
+msgid "Subaccount Analytic for tab not found(1), literal: %s"
+msgstr "Subcuenta Analítica para la pestaña no encontrada(1), literal: %s"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1218
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1712
+#: code:addons/cost_simulator/models/sale_order_ext.py:867
+#: code:addons/cost_simulator/models/sale_order_ext.py:977
+#, python-format
+msgid "Subaccount analytic account not found, literal: %s"
+msgstr "Subcuenta Analítica no encontrada, literal: %s"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type_cost:0
+msgid "Subcontracting"
+msgstr "Subcontratación"
+
+#. module: cost_simulator
+#: field:simulation.cost,subproject_ids:0
+msgid "Subprojects"
+msgstr "Subproyectos"
+
+#. module: cost_simulator
+#: field:purchase.order,project2_id:0
+msgid "Subsubproject"
+msgstr "Subsubproyectos"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,subtotal_purchase:0
+msgid "Subtotal Purchase"
+msgstr "Subtotal Compra"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,subtotal_sale:0
+msgid "Subtotal Sale"
+msgstr "Subtotal Venta"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,supplier_id:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:945
+#: code:addons/cost_simulator/models/simulation_cost.py:952
+#, python-format
+msgid "Supplier Error"
+msgstr "Error Proveedor"
+
+#. module: cost_simulator
+#: field:simulation.cost,total:0
+#: field:simulation.cost,total_amort_indirects:0
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,total_benefits:0
+msgid "TOTAL BENEFITS"
+msgstr "TOTAL BENEFICIOS"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,total_costs:0
+msgid "TOTAL COSTS"
+msgstr "TOTAL COSTES"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "TOTAL DIRECT COSTS"
+msgstr "TOTAL COSTES DIRECTOS"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "TOTAL INDIRECT COSTS"
+msgstr "TOTAL COSTES INDIRECTOS"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "TOTAL OVERHEAD COSTS"
+msgstr "TOTAL GASTOS GENERALES"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,total_sales:0
+msgid "TOTAL SALES"
+msgstr "TOTAL VENTAS"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_project_task
+msgid "Task"
+msgstr "Tarea"
+
+#. module: cost_simulator
+#: field:simulation.cost.line,template_id:0
+#: field:simulation.select.template,template_id:0
+#: field:simulation.template.line,template_id:0
+msgid "Template"
+msgstr "Plantilla"
+
+#. module: cost_simulator
+#: view:simulation.template:0
+msgid "Template Lines"
+msgstr "Líneas de Plantilla"
+
+#. module: cost_simulator
+#: model:ir.actions.act_window,name:cost_simulator.action_simulation_template
+#: model:ir.ui.menu,name:cost_simulator.simulation_template_menu_view
+#: view:simulation.cost:0
+#: view:simulation.select.template:0
+#: view:simulation.template:0
+#: view:simulation.template.line:0
+msgid "Templates"
+msgstr "Plantillas"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+#: view:simulation.template.line:0
+msgid "Templates Lines"
+msgstr "Líneas de Plantillas"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:571
+#, python-format
+msgid "There is a Simulation Cost"
+msgstr "Hay una Simulación de Coste"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:170
+#, python-format
+msgid "This Simulation Costs Have Associated Sales Orders"
+msgstr "Esta Simulación de Costes tiene asociados Pediso de Venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:182
+#: code:addons/cost_simulator/models/simulation_cost.py:684
+#: code:addons/cost_simulator/wizard/simulation_select_template.py:41
+#, python-format
+msgid "This cost simulation have Historical"
+msgstr "Esta Simulación de Costes tiene Historico"
+
+#. module: cost_simulator
+#: field:simulation.cost,total_amortizations:0
+msgid "Total Amortizations"
+msgstr "Total Amortizaciones"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+#: field:simulation.cost,benefit5:0
+#: field:simulation.cost,benefit5t:0
+msgid "Total Benefit"
+msgstr "Total Beneficio"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Total Cost"
+msgstr "Total Coste"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Total Costs"
+msgstr "Total Costes"
+
+#. module: cost_simulator
+#: field:simulation.cost,total_indirects:0
+msgid "Total Indirects"
+msgstr "Total Indirectos"
+
+#. module: cost_simulator
+#: field:simulation.cost,subtotal5_purchase:0
+#: field:simulation.cost,subtotal5t_purchase:0
+msgid "Total Purchase"
+msgstr "Total Compra"
+
+#. module: cost_simulator
+#: field:simulation.cost,subtotal5_sale:0
+#: field:simulation.cost,subtotal5t_sale:0
+msgid "Total Sale"
+msgstr "Total Venta"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Total Sales"
+msgstr "Total Ventas"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Total others cost"
+msgstr "Total Otros Coste"
+
+#. module: cost_simulator
+#: view:simulation.cost:0
+msgid "Total others sale"
+msgstr "Total Otros Venta"
+
+#. module: cost_simulator
+#: field:purchase.order,type_cost:0
+msgid "Type Cost"
+msgstr "Tipo Coste"
+
+#. module: cost_simulator
+#: view:simulation.cost.line:0
+#: field:simulation.cost.line,type_cost:0
+#: field:simulation.template.line,type_cost:0
+msgid "Type of Cost"
+msgstr "Tipo de Coste"
+
+#. module: cost_simulator
+#: selection:simulation.cost.line,type2:0
+#: selection:simulation.template.line,type2:0
+msgid "Variable"
+msgstr "Variable"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_wiz_confirm_create_sale_order
+msgid "Wizard Confirm Create Sale Order"
+msgstr "Wizard Confirmar Crear Pedido de Venta"
+
+#. module: cost_simulator
+#: model:ir.model,name:cost_simulator.model_simulation_select_template
+msgid "Wizard Select Template"
+msgstr "Wizard Seleccionar Plantilla"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1185
+#, python-format
+msgid "Yo can not modify the estimated margin, this line belongs to a line of sale order"
+msgstr "No puede modificar el margen estimado, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1031
+#, python-format
+msgid "Yo can not modify the price/ammount, this line belongs to a line of sale order"
+msgstr "No puede modificar el precio/cantidad, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:828
+#, python-format
+msgid "Yo can not modify the product, this line belongs to a line of sale order"
+msgstr "No puede modificar el producto, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1151
+#, python-format
+msgid "Yo can not modify the sale price, this line belongs to a line of sale order"
+msgstr "No puede modificar el precio de venta, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:1111
+#, python-format
+msgid "Yo can not modify the sale product, this line belongs to a line of sale order"
+msgstr "No puede modificar el producto de venta, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:946
+#, python-format
+msgid "Yo can not modify the supplier, this line belongs to a line of sale order"
+msgstr "No puede modificar el proveedor, esta línea pertenece a una línea de pedido de venta"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:332
+#, python-format
+msgid "You can not generate one Sale Order from one Historical"
+msgstr "No puede generar un Pedido de venta desde un Histórico"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:165
+#, python-format
+msgid "You have already one %s purchase order for this partner, you must cancel this purchase order to create a new quotation."
+msgstr "Ya tiene un %s pedido de venta para este cliente, debe cancelar este pedido de compra para crear un nuevo presupuesto"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:338
+#, python-format
+msgid "You must assign a customer to the simulation"
+msgstr "Debe asignar un cliente a la simulación"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/sale_order_ext.py:579
+#, python-format
+msgid "You must define one supplier for the   product: %s"
+msgstr "Debe definir un proveedor para el producto: %s"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:384
+#: code:addons/cost_simulator/models/procurement_order_ext.py:852
+#: code:addons/cost_simulator/models/purchase_requisition_ext.py:52
+#, python-format
+msgid "You must define one supplier for the product: %s"
+msgstr "Debe definir un proveedor para el producto: %s"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/simulation_cost.py:953
+#, python-format
+msgid "You must select a product"
+msgstr "Debe seleccionar un producto"
+
+#. module: cost_simulator
+#: code:addons/cost_simulator/models/procurement_order_ext.py:1769
+#, python-format
+msgid "subproject not found(2), literal: %s"
+msgstr "Subproyecto no encontrado(2), literal: %s"
+
+#. module: cost_simulator
+#: model:ir.actions.act_window,name:cost_simulator.action_confirm_create_sale_order
+msgid "wiz.confirm.create.sale.order"
+msgstr "wiz.confirm.create.sale.order"
+

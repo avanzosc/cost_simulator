@@ -13,6 +13,7 @@ virtualenv:
 install:
   - sudo pip install unidecode
   - git clone https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - git clone https://github.com/odoomrp/odoomrp-wip.git  ${HOME}/odoomrp-wip -b ${VERSION}
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly ${VERSION}
 

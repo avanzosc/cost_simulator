@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Modificación del FORM de cuentas analíticas -->
+		<record model="ir.ui.view" id="view_account_analytic_account_form_inh_costsim">
+			<field name="name">view.account.analytic.account.form.inh.costsim</field>
+			<field name="model">account.analytic.account</field>
+			<field name="priority" eval="17"/>
+			<field name="inherit_id" ref="analytic.view_account_analytic_account_form" />
+			<field name="arch" type="xml">
+				<group name="contract" position="after">
+                    <group colspan="4" col="4" name="estimations">
+                        <separator colspan="4" string="Estimations"/>
+                        <field name="estimated_balance" />
+                        <field name="estimated_cost" />
+                        <field name="estimated_sale" />
+                    </group>
+				</group>						
+			</field>
+		</record>
+		
+		<!-- Modificación del TREE de cuentas analíticas -->
+        <record id="view_account_analytic_account_tree_inh_costsim" model="ir.ui.view">
+            <field name="name">view.account.analytic.account.tree.inh.costsim</field>
+            <field name="model">account.analytic.account</field>
+            <field name="priority" eval="17"/>
+			<field name="inherit_id" ref="account.view_account_analytic_account_tree" />
+			<field name="arch" type="xml">
+				<field name="balance" position="after"> 
+					<field name="estimated_balance"/>
+                	<field name="estimated_cost"/> 
+                	<field name="estimated_sale"/> 
+				</field> 						
+			</field>
+        </record>
+
+	</data>
+</openerp>

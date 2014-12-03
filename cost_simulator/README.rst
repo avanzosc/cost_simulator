@@ -1,0 +1,2 @@
+You need install cost_simulator_purchase_types.
+Avanzosc Custom Modules

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- *********************** VISTA TREE ****************** -->
+
+		<record model="ir.ui.view" id="simulation_cost_tree_view">
+			<field name="name">simulation.cost.tree.view</field>
+			<field name="model">simulation.cost</field>
+			<field name="arch" type="xml">
+				<tree string="Templates">
+					<field name="simulation_number" />
+					<field name="historical_date" />
+					<field name="name" />
+					<field name="partner_id" />
+					<field name="total_costs" />
+					<field name="total_sales" />
+					<field name="total_benefits" />
+					<field name="net_cost" />
+					<field name="gross_margin" />
+					<field name="contribution_margin" />
+					<field name="net_margin" />
+					<field name="state" />
+				</tree>
+			</field>
+		</record>
+		
+		<!-- *********************** VISTA SEARCH ****************** -->
+
+		<record model="ir.ui.view" id="simulation_cost_search_view">
+			<field name="name">simulation.cost.search.view</field>
+			<field name="model">simulation.cost</field>
+			<field name="arch" type="xml">
+                <search string="Search Cost Simulation">
+                    <group>
+						<field name="simulation_number" />
+						<field name="name" />
+						<field name="partner_id" />
+						<field name="historical_date" />
+						<field name="state" />
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+						<filter string="Customer" domain="[]" context="{'group_by':'partner_id'}" />
+						<filter string="State" domain="[]" context="{'group_by':'state'}" />
+                   </group>
+                 </search>				
+			</field>
+		</record>
+
+		<!-- ******************* VISTA FORM ******************** -->
+
+		<record model="ir.ui.view" id="simulation_cost_form_view">
+			<field name="name">simulation.cost.form.view</field>
+			<field name="model">simulation.cost</field>
+			<field name="arch" type="xml">
+				<form string="Costs Simulation">
+                    <header>
+                        <button name="button_draft" states="accepted,canceled" string="Draft" groups="base.group_user"/>
+                        <button name="button_accepted" states="draft" string="Accepted" groups="base.group_user"/>
+                        <button name="button_canceled" states="draft" string="Canceled" groups="base.group_user"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+						<group name="head" colspan="4" col="16">
+							<field name="simulation_number" colspan="4" readonly="1"/>
+							<field name="name" colspan="8" attrs="{'readonly':[('historical_ok','=',True)]}"/>
+							<field name="partner_id"  colspan="3" domain="[('customer','=',True)]" context="{'search_default_customer':1}"/>
+							<field name="historical_date" colspan="1" />
+							<field name="historical_ok" invisible="1" />
+						</group>
+						<group colspan="4" col="10">	
+							<field name="overhead_costs" colspan="2"/>		
+							<field name="purchase_insale" colspan="2"/>
+							<group colspan="6"/>
+						</group>		
+						<newline/>		
+						<group name="button" colspan="4" col="6">	
+							<button name="button_copy_cost_simulation" string="Copy Cost Simulation" type="object" attrs="{'invisible':[('historical_ok','=',True)]}"/>
+							<button name="%(act_unique_id)d" string="Insert Lines From Template" type="action" />
+							<button name="button_historificar" string="Historificar" type="object" attrs="{'invisible':[('historical_ok','=',True)]}" />
+							<button name="button_confirm_create_sale_order" string="Create Sale Order" type="object"/>
+							<button name="button_create_newsimu_fromhisto" string="Create New From Historical" type="object" attrs="{'invisible':[('historical_ok','=',False)]}"/>
+							<button name="button_recalculation" string="Recalculation Total Cost" type="object"/>
+						</group>
+						<notebook colspan="4">
+							<page string="Simulation Lines">
+								<field name="others_cost_lines_ids" nolabel="1" attrs="{'readonly':[('historical_ok','=',True)]}" 
+									domain="[('type_cost','=','Others')]" context="{'type_cost':'Others','purchase_insale':purchase_insale}" />
+								<newline/>
+								<group colspan="4" col="8">
+									<field name="subtotal5_purchase" />
+									<field name="subtotal5_sale" />
+									<field name="benefit5" />	
+									<button name="button_recalculation" string="Recalculation" type="object" icon="gtk-ok"/>
+								</group>
+							</page>
+							<page string="Total Costs">
+								<group colspan="4" col="6">
+									<separator string="Total Cost" colspan="2"/>
+									<separator string="Total Sales" colspan="2"/>
+									<separator string="Total Benefit" colspan="2"/>
+                                    <field name="subtotal5t_purchase" string="Total others cost"/>
+                                    <field name="subtotal5t_sale" string="Total others sale"/>
+                                    <field name="benefit5t" string="Others Benefit"/>
+									<newline/>
+									<newline/>
+									<field name="total_costs" string="TOTAL DIRECT COSTS"/>		
+									<newline/>
+									<newline/>		
+									<field name="total_amortizations" string="Amortizations"/>
+									<newline/>
+									<field name="total_indirects" string="Indirects"/>
+									<newline/>
+									<field name="total_amort_indirects" string="TOTAL INDIRECT COSTS"/>	
+									<newline/>
+									<field name="total_overhead_costs" string="TOTAL OVERHEAD COSTS"/>	
+									<newline/>
+									<field name="total" string="TOTAL COSTS"/>	
+									<field name="total_sales" string="TOTAL SALES"/>	
+									<field name="total_benefits" string="TOTAL BENEFITS"/>									
+									<newline/>
+								</group>
+								<newline/>
+								<newline/>
+								<newline/>
+								<group colspan="4" col="8">
+									<field name="net_cost" />
+									<field name="gross_margin" />
+									<field name="contribution_margin" />
+									<field name="net_margin" />
+									<field name="net_cost_percentage" />
+									<field name="gross_margin_percentage" />
+									<field name="contribution_margin_percentage" />
+									<field name="net_margin_percentage" />
+								</group>
+							</page>
+							<page string="Sales Order">
+								<field name="sale_order_ids" nolabel="1" />
+							</page>
+							<page string="Projects/Subprojects">
+								<group colspan="4">
+									<field name="project_ids" nolabel="1" colspan="4" height="150"/>
+									<field name="subproject_ids" nolabel="1" colspan="4" height="450"/>
+								</group>
+							</page>
+						</notebook>
+				</form>
+			</field>
+		</record>
+
+		<!-- ***** ACCIÓN PARA LA VENTANA DE LAS VISTAS ***** -->
+
+		<record model="ir.actions.act_window" id="action_simulation_cost">
+			<field name="name">Costs</field>
+			<field name="res_model">simulation.cost</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!-- ********** DISEÑO OPCION DE MENU **********  -->
+
+		<menuitem id="simulation_cost_group_view" name="Costs Simulation"
+			parent="simulationtemplate_menu" />
+        <menuitem id="simulation_cost_menu_view" name="Costs Simulation"
+            parent="simulation_cost_group_view" action="action_simulation_cost" />
+
+	</data>
+</openerp>
