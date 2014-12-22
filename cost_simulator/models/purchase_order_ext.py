@@ -45,7 +45,7 @@ class PurchaseOrder(orm.Model):
         # de compra
         'type_cost': fields.char('Type Cost', size=64),
         # Tipo de compra
-        'type': fields.many2one('purchase.type', 'Type', required=True),
+        'type': fields.many2one('purchase.type', 'Type'),
     }
 
     _defaults = {
