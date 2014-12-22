@@ -29,7 +29,10 @@ class PurchaseOrder(orm.Model):
         purchase_type_obj = self.pool['purchase.type']
         purchase_type_ids = purchase_type_obj.search(
             cr, uid, [('name', '=', 'Others')], context=context)
-        if purchase_type_ids:
+        if not purchase_type_ids:
+            raise orm.except_orm(_('Purchase Type ERROR'),
+                                 _('OTHERS purchase type NOT FOUND'))
+        else:
             for purchase_type_id in purchase_type_ids:
                 return purchase_type_id
 
