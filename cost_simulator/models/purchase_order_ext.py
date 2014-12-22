@@ -16,45 +16,27 @@
 #
 ##############################################################################
 
-from openerp.osv import orm, fields
-from openerp.tools.translate import _
+from openerp import models, fields, api, _
 
 
-class PurchaseOrder(orm.Model):
+class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
-    def _catch_default_type(self, cr, uid, context=None):
-        if not context:
-            context = {}
-        purchase_type_obj = self.pool['purchase.type']
-        purchase_type_ids = purchase_type_obj.search(
-            cr, uid, [('name', '=', 'Others')], context=context)
-        if not purchase_type_ids:
-            raise orm.except_orm(_('Purchase Type ERROR'),
-                                 _('OTHERS purchase type NOT FOUND'))
-        else:
-            for purchase_type_id in purchase_type_ids:
-                return purchase_type_id
+    @api.one
+    @api.model
+    def _catch_default_type(self):
+        purchase_type = self.env.ref('purchase_order_type.seq_purchase_others')
+        if not purchase_type:
+            raise Warning(_('Purchase Type ERROR'),
+                          _('OTHERS purchase type NOT FOUND'))
+        return purchase_type.id
 
-    _columns = {
-        # Campo para saber que pedidos de compra se han generado a partir del
-        # pedido de venta
-        'sale_order_id': fields.many2one('sale.order', 'Sale Order'),
-        # Campo para relacionar los pedidos de compra con el subsubproyecto
-        'project2_id': fields.many2one('project.project', 'Subsubproject'),
-        # Campo para relacionar los pedidos de compra con el Projecto
-        'project3_id': fields.many2one('project.project', 'Project'),
-        # Campo para saber a que tipo de coste pertenece la orden de pedido
-        # de compra
-        'type_cost': fields.char('Type Cost', size=64),
-        # Tipo de compra
-        'type': fields.many2one('purchase.type', 'Type', required=True),
-    }
-
-    _defaults = {
-        'type': lambda self, cr, uid, c: self._catch_default_type(cr, uid,
-                                                                  context=c),
-    }
+    sale_order_id = fields.Many2one('sale.order', string='Sale Order')
+    project2_id = fields.Many2one('project.project', string='Subsubproject')
+    project3_id = fields.Many2one('project.project', string='Project')
+    type_cost = fields.Char('Type Cost', size=64)
+    type = fields.Many2one('purchase.type', 'Type',
+                           default=_catch_default_type)
 
     def onchange_purchase_type(self, cr, uid, ids, type, context=None):
         purchase_type_obj = self.pool['purchase.type']
