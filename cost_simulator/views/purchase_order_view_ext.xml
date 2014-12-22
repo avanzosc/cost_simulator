@@ -5,12 +5,13 @@
    		<record model="ir.ui.view" id="purchase_order_form_purchasetype_inh_costsim">
         	<field name="name">purchase.order.form.purchasetype.inh.costsim</field>
             <field name="model">purchase.order</field>
-            <field name="inherit_id" ref="purchase_type.purchase_order_form_inh_purchasetype"/>
+            <field name="inherit_id" ref="purchase_order_type.purchase_order_form_inh_purchasetype"/>
             <field name="arch" type="xml">
             	<field name="type" position="replace">
-            		<field name="type" widget="selection" on_change="onchange_purchase_type(type)" />
+            		<field name="type" widget="selection" on_change="onchange_purchase_type(type)"/>
             	</field>
             </field>
         </record>
+
     </data>
 </openerp>
