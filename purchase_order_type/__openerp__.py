@@ -26,6 +26,7 @@
         'purchase'
     ],
     'data': [
+        'security/ir.model.access.csv',
         'views/purchase_order_type_view.xml',
     ],
     'installable': True,
