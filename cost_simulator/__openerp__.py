@@ -30,7 +30,6 @@
         'analytic',
         'account',
         'hr_expense',
-        'purchase_requisition_order_generator',
         'sale_service',
         'purchase_order_type',
     ],
