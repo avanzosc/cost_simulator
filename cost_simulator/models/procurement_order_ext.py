@@ -147,15 +147,6 @@ class ProcurementOrder(orm.Model):
                 # Llamo con SUPER al método padre
                 res = super(ProcurementOrder, self).make_po(
                     cr, uid, [procurement.id], context=context)
-                purchase_order_id = res[procurement.id]
-                purchase_order = purchase_obj.browse(
-                    cr, uid, purchase_order_id, context=context)
-                type_o = purchase_type_obj.browse(cr, uid,
-                                                  purchase_order.type.id)
-                code = type_o.sequence.code
-                seq = seq_obj.get(cr, uid, code)
-                purchase_obj.write(cr, uid, [purchase_order_id],
-                                   {'name': seq}, context=context)
             else:
                 # SI EL PEDIDO DE VENTA VIENE DE UNA SIMULACION
                 if not sale_line.simulation_cost_line_ids:

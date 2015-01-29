@@ -22,21 +22,11 @@ from openerp import models, fields, api, _
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
-    @api.one
-    @api.model
-    def _catch_default_type(self):
-        purchase_type = self.env.ref('purchase_order_type.seq_purchase_others')
-        if not purchase_type:
-            raise Warning(_('Purchase Type ERROR'),
-                          _('OTHERS purchase type NOT FOUND'))
-        return purchase_type.id
-
     sale_order_id = fields.Many2one('sale.order', string='Sale Order')
     project2_id = fields.Many2one('project.project', string='Subsubproject')
     project3_id = fields.Many2one('project.project', string='Project')
     type_cost = fields.Char('Type Cost', size=64)
-    type = fields.Many2one('purchase.type', 'Type',
-                           default=_catch_default_type)
+    type = fields.Many2one('purchase.type', 'Type')
 
     def onchange_purchase_type(self, cr, uid, ids, type, context=None):
         purchase_type_obj = self.pool['purchase.type']

@@ -31,7 +31,7 @@
         'account',
         'hr_expense',
         'sale_service',
-        'purchase_order_type',
+        'purchase_requisition',
     ],
     'data': [
         'data/workflow.xml',
@@ -45,7 +45,6 @@
         'views/simulation_cost_view.xml',
         'views/simulation_cost_line_view.xml',
         'views/sale_order_ext_view.xml',
-        'views/purchase_order_view_ext.xml',
         'views/project_task_ext_view.xml',
         'views/project_project_ext_view.xml',
         'views/account_analytic_account_ext_view.xml',
