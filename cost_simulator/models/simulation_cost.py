@@ -827,13 +827,12 @@ class SimulationCostLine(orm.Model):
         if not product_id or not type:
             return {'value': res}
 
-        context_user = {'lang': lang_obj.browse(cr, uid, uid).context_lang}
+        context_user = {'lang': lang_obj.browse(cr, uid, uid).lang}
         product = product_obj.browse(cr, uid, product_id, context=context_user)
         # COJO EL PRIMER PROVEEDOR PARA EL PRODUCTO
-        supplierinfo_ids = supplierinfo_obj.search(cr, uid,
-                                                   [('product_id', '=',
-                                                     product.id)],
-                                                   order='sequence')
+        supplierinfo_ids = supplierinfo_obj.search(cr, uid, [
+            ('product_tmpl_id', '=', product.product_tmpl_id.id)
+        ], order='sequence')
         if not amount:
             amount = 1.0
         if supplierinfo_ids:

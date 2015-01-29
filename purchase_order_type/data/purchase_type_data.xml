@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Sequence for initial Others purchase type -->
+        <record id="seq_purchase_others" model="ir.sequence">
+            <field name="name">Other Purchases</field>
+            <field name="code">purchase.order</field>
+            <field name="prefix">PT</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Initial value of purchase type -->
+        <record id="purchase_order_type" model="purchase.type">
+            <field name="sequence" ref="seq_purchase_others"/>
+            <field name="name">Others</field>
+        </record>    
+
+    </data>
+</openerp>
