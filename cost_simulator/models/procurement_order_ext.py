@@ -38,7 +38,6 @@ class ProcurementOrder(orm.Model):
         sale_obj = self.pool['sale.order']
         sale_line_obj = self.pool['sale.order.line']
         simulation_obj = self.pool['simulation.cost']
-        
         for procurement in self.browse(cr, uid, ids, context=context):
             if (procurement.product_id.type == 'service' and
                     procurement.product_id.procure_method == 'make_to_stock'):
