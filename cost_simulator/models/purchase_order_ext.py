@@ -16,7 +16,7 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api, _
+from openerp import models, fields
 
 
 class PurchaseOrder(models.Model):
